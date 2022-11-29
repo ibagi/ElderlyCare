@@ -1,0 +1,1 @@
+py ..\tools\mock-opcua-server\server.py

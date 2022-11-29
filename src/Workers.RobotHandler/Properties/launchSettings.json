@@ -1,0 +1,18 @@
+{
+  "profiles": {
+    "EC.Workers.RobotHandling": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development",
+        "DbServer": "localhost",
+        "DbDatabase": "elderly_care_local",
+        "DbUser": "sa",
+        "DbPassword": "dbadmin"
+      },
+      "dotnetRunMessages": true
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
