@@ -1,4 +1,4 @@
-using ElderyCare.Data.Models;
+using ElderyCare.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace ElderyCare.Data

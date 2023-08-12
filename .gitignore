@@ -1,4 +1,5 @@
 .vs
+.vscode
 packages
 node_modules
 [bB]in

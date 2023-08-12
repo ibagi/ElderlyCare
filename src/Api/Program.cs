@@ -1,4 +1,4 @@
-using ElderyCare.Data.Extensions;
+using ElderyCare.Data;
 using MediatR;
 using Microsoft.Extensions.FileProviders;
 
@@ -38,8 +38,6 @@ app.UseStaticFiles(new StaticFileOptions
     FileProvider = new PhysicalFileProvider(Path.Combine(builder.Environment.ContentRootPath, "assets"))
 });
 
-// TODO: configure HTTPS
-// app.UseHttpsRedirection();
 app.UseCors("EnableCors");
 
 app.MapControllers();

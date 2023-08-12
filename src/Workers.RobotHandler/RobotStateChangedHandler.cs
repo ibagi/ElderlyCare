@@ -1,5 +1,5 @@
 ﻿using ElderyCare.Data;
-using ElderyCare.Data.Models;
+using ElderyCare.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json;
 

@@ -2,13 +2,13 @@ FROM mcr.microsoft.com/dotnet/sdk:6.0
 
 WORKDIR /src
 
-COPY ./Workers.RobotHandler /src/Workers.RobotHandler
+COPY ./Api /src/Api
 COPY ./Data /src/Data
 COPY ./Domain /src/Domain
 
-RUN dotnet restore Workers.RobotHandler/ElderlyCare.Workers.RobotHandler.csproj
+RUN dotnet restore Api/ElderlyCare.Api.csproj
 
-WORKDIR /src/Workers.RobotHandler/
+WORKDIR /src/Api/
 RUN dotnet build -c Release
 
 ENTRYPOINT ["dotnet", "run", "--no-build", "--no-launch-profile", "-c", "Release", "--"]

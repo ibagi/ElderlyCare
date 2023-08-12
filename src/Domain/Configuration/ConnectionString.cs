@@ -8,7 +8,7 @@
     {
         public override string ToString()
         {
-            return $"Server={Server};Database={Database};User Id={User};Password={Password}";
+            return $"Server={Server};Database={Database};Uid={User};Pwd={Password}";
         }
 
         public static implicit operator string(ConnectionString connectionString) => connectionString.ToString();

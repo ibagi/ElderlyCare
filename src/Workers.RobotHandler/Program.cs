@@ -1,5 +1,5 @@
 using ElderlyCare.Workers.RobotHandler;
-using ElderyCare.Data.Extensions;
+using ElderyCare.Data;
 using Lib.AspNetCore.ServerSentEvents;
 
 var builder = WebApplication.CreateBuilder(args);
