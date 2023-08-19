@@ -6,7 +6,7 @@ using Polly.Contrib.WaitAndRetry;
 using Polly.Retry;
 using System.Reactive.Linq;
 
-namespace ElderlyCare.Workers.RobotHandler
+namespace ElderlyCare.Worker
 {
     public class RobotAgent
     {

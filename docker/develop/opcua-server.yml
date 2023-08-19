@@ -1,0 +1,15 @@
+version: '3.2'
+
+services:
+  opcua-server:
+    build:
+      context: ./../../src/
+      dockerfile: ./OpcuaServer/Dockerfile
+    ports:
+      - 4840:4840
+    networks:
+      - elderly_care_net
+
+networks:
+  elderly_care_net:
+    driver: bridge

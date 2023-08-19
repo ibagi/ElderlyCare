@@ -2,7 +2,7 @@
 using Opc.Ua;
 using Opc.Ua.Client;
 
-namespace ElderlyCare.Workers.RobotHandler
+namespace ElderlyCare.Worker
 {
     public class RobotMonitor
     {

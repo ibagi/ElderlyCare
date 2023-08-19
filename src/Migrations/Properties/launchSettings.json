@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "ElderlyCare.Migrations": {
-      "commandName": "Project",
-      "commandLineArgs": "\"Server=(localdb)\\mssqllocaldb;Database=elderly_care_local;User Id=sa;Password=dbadmin;\""
-    }
-  }
-}

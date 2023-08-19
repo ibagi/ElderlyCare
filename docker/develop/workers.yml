@@ -1,12 +1,21 @@
-version: '3.8'
+version: '3.2'
 
 services:
   worker:
+    restart: always
     build:
-      context: ../../src/
-      dockerFile: ../../src/Workers.RobotHandler/Dockerfile.develop
-    env_file: .env
+      context: ./../../src/
+      dockerfile: ./Workers.RobotHandler/Dockerfile
     environment:
       ASPNETCORE_URLS: http://*:5020/
-  depends_on:
-    - db
+      ConnectionStrings__ElderlyCare: Server=db;Database=elderly_care_local;Uid=root;Pwd=root;
+    ports:
+      - 5020:5020
+    networks:
+      - elderly_care_net
+    depends_on:
+      - db
+
+networks:
+  elderly_care_net:
+    driver: bridge

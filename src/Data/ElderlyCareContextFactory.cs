@@ -7,6 +7,7 @@ namespace ElderyCare.Data
     {
         public ElderlyCareContext CreateDbContext(string[] args)
         {
+            // TODO: read this from configuration instead
             var connectionString = "Server=localhost;Database=elderly_care_local;Uid=root;Pwd=root;";
 
             var optionsBuilder = new DbContextOptionsBuilder<ElderlyCareContext>();

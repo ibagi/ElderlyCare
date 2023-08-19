@@ -3,7 +3,7 @@ using Opc.Ua.Client;
 using Opc.Ua.Configuration;
 using System.Security.Cryptography.X509Certificates;
 
-namespace ElderlyCare.Workers.RobotHandler
+namespace ElderlyCare.Worker
 {
     public class OpcApplication
     {

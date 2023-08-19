@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:6.0
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 
 WORKDIR /src
 
@@ -9,6 +9,10 @@ COPY ./Domain /src/Domain
 RUN dotnet restore Api/ElderlyCare.Api.csproj
 
 WORKDIR /src/Api/
-RUN dotnet build -c Release
+RUN dotnet publish -c Release -o build -r linux-x64 --self-contained
 
-ENTRYPOINT ["dotnet", "run", "--no-build", "--no-launch-profile", "-c", "Release", "--"]
+FROM mcr.microsoft.com/dotnet/runtime-deps:6.0
+COPY --from=build /src/Api/build ./app
+WORKDIR /app
+
+ENTRYPOINT ["./ElderlyCare.Api"]

@@ -3,7 +3,7 @@ using ElderyCare.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json;
 
-namespace ElderlyCare.Workers.RobotHandler
+namespace ElderlyCare.Worker
 {
     public class RobotStateChangedHandler
     {

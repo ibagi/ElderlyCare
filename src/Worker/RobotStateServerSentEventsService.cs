@@ -1,7 +1,7 @@
 ﻿using Lib.AspNetCore.ServerSentEvents;
 using Microsoft.Extensions.Options;
 
-namespace ElderlyCare.Workers.RobotHandler
+namespace ElderlyCare.Worker
 {
     public interface IRobotStateServerSentEventsService : IServerSentEventsService
     { }

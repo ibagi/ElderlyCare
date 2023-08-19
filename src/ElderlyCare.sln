@@ -7,9 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElderyCare.Data", "Data\Eld
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElderlyCare.Api", "Api\ElderlyCare.Api.csproj", "{BA5550FC-6EBD-4FFB-9BE7-13C2D656F388}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElderlyCare.Workers.RobotHandler", "Workers.RobotHandler\ElderlyCare.Workers.RobotHandler.csproj", "{C6B592CC-F4FB-4D06-8E6B-880147E51C44}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElderlyCare.Migrations", "Migrations\ElderlyCare.Migrations.csproj", "{7F748CEC-DAF0-4F1E-8174-8305FD3A4A1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElderlyCare.Worker", "Worker\ElderlyCare.Worker.csproj", "{C6B592CC-F4FB-4D06-8E6B-880147E51C44}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElderlyCare.Domain", "Domain\ElderlyCare.Domain.csproj", "{11E7905A-36E5-4F2B-8A63-03CF58D3F873}"
 EndProject
@@ -31,10 +29,6 @@ Global
 		{C6B592CC-F4FB-4D06-8E6B-880147E51C44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6B592CC-F4FB-4D06-8E6B-880147E51C44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6B592CC-F4FB-4D06-8E6B-880147E51C44}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7F748CEC-DAF0-4F1E-8174-8305FD3A4A1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7F748CEC-DAF0-4F1E-8174-8305FD3A4A1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7F748CEC-DAF0-4F1E-8174-8305FD3A4A1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7F748CEC-DAF0-4F1E-8174-8305FD3A4A1C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{11E7905A-36E5-4F2B-8A63-03CF58D3F873}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{11E7905A-36E5-4F2B-8A63-03CF58D3F873}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11E7905A-36E5-4F2B-8A63-03CF58D3F873}.Release|Any CPU.ActiveCfg = Release|Any CPU

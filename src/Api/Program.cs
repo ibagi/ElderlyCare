@@ -41,4 +41,6 @@ app.UseStaticFiles(new StaticFileOptions
 app.UseCors("EnableCors");
 
 app.MapControllers();
+
+app.Services.InitializeElderyCareContext();
 app.Run();
