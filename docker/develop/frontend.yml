@@ -1,16 +1,17 @@
 version: '3.8'
 
 services:
-  db:
-    image: mariadb
+  web_app:
     restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: elderly_care_local
+    build:
+      context: ./../../src/
+      dockerfile: ./WebApp/Dockerfile
     ports:
-      - 3306:3306
+      - 3000:80
     networks:
       - elderly_care_net
+    depends_on:
+      - api
 
 networks:
   elderly_care_net:

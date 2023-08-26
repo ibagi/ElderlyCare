@@ -30,7 +30,7 @@ namespace ElderyCare.Data
         private void SeedWithInitialData()
         {
             const int numberOfRobots = 5;
-            var opcUrl = "opc.tcp://localhost:4840/";
+            var opcUrl = "opc.tcp://opcua_server:4840/";
 
             for (int i = 0; i < numberOfRobots; i++)
             {

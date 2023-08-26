@@ -1,11 +1,11 @@
-version: '3.2'
+version: '3.8'
 
 services:
   worker:
     restart: always
     build:
       context: ./../../src/
-      dockerfile: ./Workers.RobotHandler/Dockerfile
+      dockerfile: ./Worker/Dockerfile
     environment:
       ASPNETCORE_URLS: http://*:5020/
       ConnectionStrings__ElderlyCare: Server=db;Database=elderly_care_local;Uid=root;Pwd=root;
